@@ -541,6 +541,8 @@ int main() {
 
     std::vector<int> preRes = search(&mainTrie, inpword);
     //std::vector<Tresult> finalRes = collect(preRes, ms, jPattern, textSize, count);
+    
+    //С помощью перехода по сжатым суффиксным ссылкам проверяем, не пропустили ли мы вхождение
 
     if(DEBUG == true) {
         for (unsigned long i = 0; i < textmodula.size(); ++i) {
